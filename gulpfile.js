@@ -14,16 +14,16 @@ gulp.task('default', ['watch']);
 gulp.task('server', ['serve', 'watch']);
 
 // Minify jQuery Plugins: Run manually with: "gulp squish-jquery"
-gulp.task('squish-jquery', function () {
-    return gulp.src('assets/js/libs/**/*.js')
-        .pipe(plugins.uglify({
-            output: {
-                'ascii_only': true
-            }
-        }))
-        .pipe(plugins.concat('jquery.plugins.min.js'))
-        .pipe(gulp.dest('build'));
-});
+// gulp.task('squish-jquery', function () {
+//     return gulp.src('assets/js/libs/**/*.js')
+//         .pipe(plugins.uglify({
+//             output: {
+//                 'ascii_only': true
+//             }
+//         }))
+//         .pipe(plugins.concat('jquery.plugins.min.js'))
+//         .pipe(gulp.dest('build'));
+// });
 
 // Minify Custom JS: Run manually with: "gulp build-js"
 gulp.task('build-js', function () {

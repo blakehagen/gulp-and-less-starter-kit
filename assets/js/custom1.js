@@ -1,1 +1,1 @@
-console.log('script from cutsom1');
+console.log('script from custom1');
