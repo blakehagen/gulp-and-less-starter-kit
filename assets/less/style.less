@@ -1,7 +1,50 @@
-// Base Styles
-@import 'base.less';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@base: dodgerblue;
 
+* {
+  box-sizing: border-box;
+}
 
-a {
-    color: red;
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      margin: 14px;
+      font-size:50px;
+      cursor: default;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      color: #333;
+    }
+  }
+
+  .row {
+    border: 1px solid @base;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px;
+    p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      cursor: default;
+      font-weight: 100;
+      margin:0;
+      span {
+        font-weight: 400;
+        color: @base;
+      }
+    }
+  }
 }
